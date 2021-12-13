@@ -109,8 +109,19 @@ img {
   margin-left: auto;
 }
 
+.header-conection-li {
+  display: flex;
+}
+
 .header-conection .header-conection-li + .header-conection-li {
   margin-left: 50px;
+}
+
+.header-icon {
+  fill: currentColor;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-mail,
@@ -193,12 +204,80 @@ img {
   color: var(--hover-focus-text-color);
 }
 
+.footer-social-list {
+  display: flex;
+  list-style: none;
+}
+
+.footer-connect {
+  display: flex;
+}
+
+.footer-connect-text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 12px;
+}
+
+.social {
+  padding-left: 70px;
+}
+
+.footer-social-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.footer-social-item {
+  width: 44px;
+  height: 44px;
+  margin-top: 20px;
+}
+
+.footer-social-link {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social-icon {
+  fill: currentColor;
+}
+
+.footer-social-link:focus,
+.footer-social-link:hover {
+  background-color: var(--hover-focus-text-color);
+  color: #ffffff;
+}
+
 /*-------------Main page text decoration----------*/
 .banner {
   text-align: center;
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bgpeople.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .big-text {
@@ -224,6 +303,27 @@ img {
   min-height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+.icon-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.icon-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.icon {
 }
 
 .competence {
@@ -337,6 +437,98 @@ img {
   padding-bottom: 30px;
 }
 
+.team-social-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.team-social-item {
+  width: 44px;
+  height: 44px;
+  margin-top: 16px;
+}
+
+.team-social-link {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  color: #afb1b8;
+}
+
+.team-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-social-icon {
+  fill: currentColor;
+}
+
+.team-social-link:focus,
+.team-social-link:hover {
+  background-color: var(--hover-focus-text-color);
+  color: #ffffff;
+}
+
+.client {
+  background-color: #ffffff;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.client-titel {
+  padding-bottom: 50px;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.client-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.client-list-item {
+  display: flex;
+  width: 170px;
+  height: 92px;
+}
+
+.client-list-link {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.client-icon {
+  fill: currentColor;
+}
+
+.client-list-link:focus,
+.client-list-link:hover {
+  border: 1px solid var(--hover-focus-text-color);
+  border-radius: 4px;
+  color: var(--hover-focus-text-color);
+}
+
+.client-icon:focus,
+.client-icon:hover {
+  color: var(--hover-focus-text-color);
+}
+
 /*-------------Portfolio text decoretion------------*/
 
 .bgmain {
@@ -403,6 +595,13 @@ img {
 
 .foto-item:nth-child(n + 4) {
   margin-top: 30px;
+}
+
+.foto-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .foto-titel {

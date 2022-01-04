@@ -92,7 +92,7 @@ img {
 }
 
 .header-navigation-link {
-  display: block;
+  display: flex;
   padding-bottom: 32px;
   padding-top: 32px;
   text-decoration: none;
@@ -109,10 +109,6 @@ img {
   margin-left: auto;
 }
 
-.header-conection-li {
-  display: flex;
-}
-
 .header-conection .header-conection-li + .header-conection-li {
   margin-left: 50px;
 }
@@ -120,13 +116,13 @@ img {
 .header-icon {
   fill: currentColor;
   margin-right: 10px;
-  align-items: center;
-  justify-content: center;
 }
 
 .header-mail,
 .header-tel {
-  display: block;
+  display: flex;
+  text-align: center;
+  justify-content: center;
   padding-bottom: 32px;
   padding-top: 32px;
   font-weight: 500;
@@ -143,6 +139,9 @@ img {
 .header-navigation-link:hover,
 .header-navigation-link:focus {
   color: var(--hover-focus-text-color);
+}
+
+.use {
 }
 
 /*-------------Footer text decoration-------------*/
@@ -277,7 +276,7 @@ img {
     url(../images/bgpeople.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .big-text {
@@ -480,11 +479,11 @@ img {
 }
 
 .client-titel {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   font-weight: bold;
   font-size: 36px;
-  line-height: 1.67;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -563,6 +562,8 @@ img {
 
   padding-left: 22px;
   padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   border-radius: 4px;
   border-color: transparent;
 }

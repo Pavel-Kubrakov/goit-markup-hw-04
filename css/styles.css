@@ -874,9 +874,7 @@ img {
   fill: var(--hover-focus-text-color);
 }
 
-.modal-input-area:hover,
 .modal-input-area:focus,
-.modal-input-coment:hover,
 .modal-input-coment:focus {
   border-color: var(--hover-focus-text-color);
 }

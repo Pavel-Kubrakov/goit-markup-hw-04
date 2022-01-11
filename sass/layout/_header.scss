@@ -1,0 +1,99 @@
+// .header-main {
+//   background-color: #ffffff;
+//   border-bottom: 1px solid #ececec;
+// }
+
+// .conteiner-flex {
+//   display: flex;
+//   margin-right: auto;
+//   margin-left: auto;
+//   width: 1200px;
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   align-content: center;
+// }
+
+// .header-navigation {
+//   display: flex;
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.14;
+// }
+
+// .header-navigation-list {
+//   display: flex;
+//   list-style: none;
+//   align-content: center;
+//   padding: 0 0;
+//   margin: 0 0;
+// }
+
+// .header-navigation-list {
+//   .header-navigation-item:not(:last-child) {
+//     margin-right: 50px;
+//   }
+// }
+
+// .header-navigation-link {
+//   display: flex;
+//   padding-bottom: 32px;
+//   padding-top: 32px;
+//   text-decoration: none;
+//   color: var(--main-text-color);
+//   position: relative;
+//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .header-navigation-link.current::after {
+//   content: "";
+//   width: 100%;
+//   height: 4px;
+//   border-radius: 2px;
+//   background-color: var(--hover-focus-text-color);
+//   color: var(--hover-focus-text-color);
+//   position: absolute;
+//   display: block;
+//   bottom: -1px;
+// }
+
+// .header-conection {
+//   list-style: none;
+//   display: flex;
+//   text-decoration: none;
+//   margin-top: 0px;
+//   margin-bottom: 0px;
+//   padding-left: 0px;
+//   margin-left: auto;
+// }
+
+// .header-conection .header-conection-li + .header-conection-li {
+//   margin-left: 50px;
+// }
+
+// .header-icon {
+//   fill: currentColor;
+//   margin-right: 10px;
+// }
+
+// .header-mail,
+// .header-tel {
+//   display: flex;
+//   text-align: center;
+//   justify-content: center;
+//   padding-bottom: 32px;
+//   padding-top: 32px;
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   text-decoration: none;
+//   color: var(--adress-mail-color-header);
+// }
+
+// .header-tel:hover,
+// .header-mail:hover,
+// .header-tel:focus,
+// .header-mail:focus,
+// .header-navigation-link:hover,
+// .header-navigation-link:focus {
+//   color: var(--hover-focus-text-color);
+// }

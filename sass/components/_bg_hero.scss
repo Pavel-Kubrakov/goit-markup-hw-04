@@ -1,0 +1,62 @@
+.bg_hero {
+    background-color: #2f303a;
+    color: #FFFFFF;
+    background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../../images/mobile/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  
+    @media  (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                        url(../../images/mobile2x/bg@2x.jpg);
+    }
+  
+    @media screen and (min-width: 768px){
+        padding-top: 118px;
+        padding-bottom: 118px;
+        background-image:linear-gradient(
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                        url(../../images/tablet/bg.jpg);
+        
+        @media  (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                        url(../../images/tablet2x/bg@2x.jpg);
+        }
+    }
+  
+    @media screen and (min-width: 1200px){
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-image:linear-gradient(
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                        url(../../images/pc/bgpeople.jpg);
+        
+        @media  (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+        background-image:linear-gradient(
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                        url(../../images/pc2x/bg@2x.jpg);
+        }
+    }
+  
+    margin-top: 60px;
+}

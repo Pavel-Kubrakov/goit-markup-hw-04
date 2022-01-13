@@ -1,45 +1,44 @@
-// .wedo {
-// padding-bottom: 94px;
-// background-color: #ffffff;
-// }
-  
-// .wedo-text {
-//     text-align: center;
-  
-//     font-weight: bold;
-//     font-size: 36px;
-//     line-height: 1.17;
-// }
-  
-// .wedo-list {
-//     display: flex;
-//     margin-top: 50px;
-//     justify-content: space-between;
-// }
-  
-// .wedo-item {
-//     list-style: none;
-// }
-  
-// .wedo-wrap {
-//     position: relative;
-// }
-  
-// .wedo-text-up {
-//     display: flex;
-//     position: absolute;
-//     left: 0;
-//     bottom: 0;
-//     width: 100%;
-//     height: 70px;
-//     margin: auto;
-//     color: #ffffff;
-//     font-weight: bold;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.03em;
-//     text-transform: uppercase;
-//     justify-content: center;
-//     background-color: rgba(47, 48, 58, 0.8);
-//     padding: 27px 0;
-// }
+.wedo {
+  padding-bottom: 94px;
+  background-color: #ffffff;
+}
+
+.wedo-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.wedo__list {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+.wedo__list__item {
+  list-style: none;
+}
+
+.wedo-wrap {
+  position: relative;
+}
+
+.wedo__text-up {
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  margin: auto;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  justify-content: center;
+  background-color: rgba(47, 48, 58, 0.8);
+  padding: 27px 0;
+}

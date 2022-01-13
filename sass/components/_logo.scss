@@ -1,16 +1,16 @@
 .logo {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 93px;
-    font-family: Raleway, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.2;
-    text-decoration: none;
-    color: var(--main-text-color);
-    
-    &_web {
-        color: var(--hover-focus-text-color);
-    }
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  color: var(--main-text-color);
+
+  &__web {
+    color: var(--hover-focus-text-color);
+  }
 }

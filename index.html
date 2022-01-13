@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title lang="en">WebStudio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+        integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +22,9 @@
         <!-- logo -->    
         <div class="conteiner conteiner-flex">
             <a class="logo" href="./index.html"><span class="logo__web">Web</span>Studio</a>
+            <button class="mobile__menu__btn" type="button"><svg class="header__btn__mobile__icon" width="24" height="16">
+                <use href="images/icons.svg#icon-menu320"></use>
+            </svg></button>
             <!-- navigation -->
             <nav class="header__navigation">
                 <ul class="header__navigation__list">
@@ -51,6 +54,48 @@
                 </li>
             </ul>
         </div>
+        <div class="header__mobile__menu is-hidden">
+            <div class="header__mobile__menu__conteiner">
+            <button class="mobile__menu__btn btn__close" type="button"><svg class="header__btn__mobile__icon" width="19" height="19">
+                    <use href="images/icons.svg#icon-close-menu"></use>
+                </svg></button>
+                <div class="scroll">
+                    <div class="scroll__top">
+                <ul class="header__mobile-menu__list-nav">
+                    <li class="header__mobile-menu__item-nav">
+                        <a class="header__mobile-menu__link-nav" href="./index.html">Студия</a>
+                    </li>
+                    <li class="header__mobile-menu__item-nav">
+                        <a class="header__mobile-menu__link-nav" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="header__mobile-menu__item-nav">
+                        <a class="header__mobile-menu__link-nav" href="">Контакты</a>
+                    </li>
+                </ul>
+                </div>
+                <div class="scroll__bottom">
+                <ul class="header__mobile-menu__list-connect">
+                  <li class="header__mobile-menu__item-connect">
+                        <a class="header__mobile-menu__link-connect" href="tel:+380961111111" title="Позвонить нам">
+                            +380 96 111 11 11
+                        </a>
+                    </li>
+                <li class="header__mobile-menu__item-connect">
+                    <a class="header__mobile-menu__link-connect black-size" href="mailto:info@devstudio.com" target="_blank" title="Написать нам">
+                        info@devstudio.com
+                    </a>
+                </li>
+                </ul>
+                <ul class="header__mobile-menu__social__list">
+                    <li class="header__mobile-menu__social__item"><a class="header__mobile-menu__social__link " href="">Instagram</a></li>
+                    <li class="header__mobile-menu__social__item"><a class="header__mobile-menu__social__link after" href="">Twitter</a></li>
+                    <li class="header__mobile-menu__social__item"><a class="header__mobile-menu__social__link after" href="">Facebook</a></li>
+                    <li class="header__mobile-menu__social__item"><a class="header__mobile-menu__social__link after" href="">LinkedIn</a></li>
+                </ul>
+                </div>
+                </div>
+            </div>
+            </div>
     </header>
 
     <main>
@@ -110,19 +155,20 @@
             <!-- What we do-->
             <section class="wedo">
                     <div class="conteiner">
-                        <h3 class="wedo-title">Чем мы занимаемся</h3>
+                        <h3 class="wedo__title">Чем мы занимаемся</h3>
                         <ul class="wedo__list">
                             <li class="wedo__list__item">
                                 <div class="wedo-wrap">
                                     <picture>
-                                        <source
-                                            srcset="./images/pc/desctop.jpg 1x,
-                                            ./images/pc2x/desctop@2x.jpg 2x"
-
-                                            media="(min-width: 1200px)"
-                                        >    
-                                        <img class="wedo-img" src="./images/pc2x/desctop@2x.jpg" alt="Руки на клавиатуре"/>
-                                    </picture>
+                                        <source srcset="./images/pc/desctop.jpg 1x,
+                                                                        ./images/pc2x/desctop@2x.jpg 2x" media="(min-width: 1200px)">
+                                        <source srcset="./images/tablet/maninglass.jpg 1x,
+                                                                        ./images/tablet2x/maninglass@2x.jpg 2x" media="(min-width: 768px)">
+                                        <source srcset="./images/mobile/maninglass.jpg 1x,
+                                                                        ./images/mobile2x/maninglass@2x.jpg 2x" media="(min-width: 480px)">
+                                        <source srcset="./images/mobile/maninglass320.jpg 1x,
+                                                                        ./images/mobile2x/maninglass320@2x.jpg 2x" media="(min-width: 320px)">
+                                        <img class="team__picture__size" src="./images/pc/desctop.jpg" alt="Руки на клавиатуре" />
                                 <p class="wedo__text-up">Десктопные приложения</p>
                                 </div>
                             </li>
@@ -413,7 +459,7 @@
         <div class="conteiner">
             <div class="footer__connect">
                 <div class="footer__item__flex">
-                    <div>
+                    <div class="footer__logo__adress">
                         <a class="footer__logo" href="./index.html"><span class="logo__web">Web</span>Studio</a>
                         <address class="footer__adress">
                             <ul class="footer__adress__list">
@@ -521,5 +567,6 @@
     </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
     </body>
     </html>

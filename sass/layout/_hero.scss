@@ -1,25 +1,19 @@
 .hero__title {
   font-style: normal;
+  font-size: 26px;
   font-weight: 900;
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 20px;
+  margin-bottom: 30px;
 
-  @media screen and (max-width: 479px) {
-    font-size: 20px;
-  }
-
-  @media screen and (min-width: 480px) {
-    font-size: 26px;
-    line-height: 1.62;
-    padding-left: 45px;
-    padding-right: 45px;
+  @media screen and (min-width: 448px) {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media screen and (min-width: 768px) {
-    font-size: 26px;
     padding-left: 189px;
     padding-right: 189px;
   }
@@ -32,12 +26,6 @@
 }
 
 .hero__btn {
-  @media screen and (max-width: 479px) {
-    font-size: 14px;
-    padding: 10px 32px;
-  }
-  @media screen and (min-width: 480px) {
-    font-size: 16px;
-    padding: 10px 32px;
-  }
+  font-size: 16px;
+  padding: 10px 32px;
 }

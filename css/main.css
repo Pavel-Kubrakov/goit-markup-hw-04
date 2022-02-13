@@ -761,7 +761,7 @@
   font-size: 28px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .team__title {
     font-size: 36px;
   }
@@ -898,7 +898,7 @@
 }
 
 .client__icon-titel {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: bold;
   font-size: 28px;
   line-height: 1.17;
@@ -909,6 +909,7 @@
 @media screen and (min-width: 1200px) {
   .client__icon-titel {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
@@ -930,7 +931,7 @@
 @media screen and (max-width: 767px) {
   .client__icon-list {
     flex-wrap: wrap;
-    flex-basis: calc(100% - 60px / 2);
+    flex-basis: calc(100% - 90px / 2);
   }
 }
 
@@ -946,11 +947,23 @@
   .client__icon-list__item {
     width: 210px;
   }
+  .client__icon-list__item + .client__icon-list__item {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .client__icon-list__item:nth-child(2n +1) {
+    margin-left: 0px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .client__icon-list__item {
-    width: 236px;
+    width: 226px;
+  }
+  .client__icon-list__item:nth-child(4) {
+    margin-left: 0px;
   }
 }
 
@@ -1008,12 +1021,12 @@
 }
 
 .portfolio__btn {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .portfolio__btn {
-    margin-bottom: 15px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1033,9 +1046,17 @@
   cursor: pointer;
 }
 
-.portfolio__btn__item {
-  margin-right: 8px;
-  margin-bottom: 15px;
+@media screen and (max-width: 767px) {
+  .portfolio__btn__item {
+    margin-right: 8px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__btn__item {
+    margin-bottom: 0px;
+  }
 }
 
 .button {
@@ -1046,13 +1067,13 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  display: inline-block;
+  display: flex;
   background-color: #f5f4fa;
   cursor: pointer;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   border-radius: 4px;
   border-color: transparent;
 }
@@ -1221,6 +1242,10 @@
   text-align: center;
 }
 
+.footer__adress__item + .footer__adress__item {
+  margin-top: 8px;
+}
+
 @media screen and (min-width: 1200px) {
   .footer__adress__item {
     text-align: left;
@@ -1351,6 +1376,12 @@
   outline: none;
   color: rgba(255, 255, 255, 0.6);
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__subscribe__input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1693,6 +1724,7 @@ h3,
 h4,
 h5,
 ul {
+  text-decoration: none;
   margin: 0 0;
   padding: 0 0;
 }
